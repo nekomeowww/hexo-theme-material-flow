@@ -7,9 +7,12 @@
     	<%= post.title %>
     </a>
   </h2>
+  <% var prePath = "/" + config.about_dir + "/index.html";
+  if(prePath != ("/" + post.path)) { %>
 	<time>
-	  <%= date(post.date, 'MMM D, YYYY') %>
+	 <%= date(post.date, 'MMM D, YYYY') %>
 	</time>
+  <% } %>
 	<%- partial('categories',{post:post}) %>
 	</section>
 	<% if(post.toc!==false){ %>
@@ -19,6 +22,17 @@
   	<div class="article-entry" itemprop="articleBody">
     	<%- post.content %>
   	</div>
+    <%
+      var prePath = "/" + config.about_dir + "/index.html";
+      if(prePath != ("/" + post.path)) { %>
+        <div>
+          <blockquote>
+            本文作者： <%- config.author %><br/>
+            本文链接： <a href="<%- config.url + "/" + post.path %>"><%- config.url + "/" + post.path %></a>
+            <div class="license">版权声明：<%- globalLicense(config) %></div>
+          </blockquote>
+        </div>
+    <% } %>
 	  <% if (post.tags && post.tags.length) { %>
 	  <div class="article-tags tags">
       <% post.tags.each(function(item){ %>
@@ -26,12 +40,12 @@
       <%})%>
 	  </div>
     <% } %>
-		
+
 	<% if(post.prev || post.next){ %>
 		<div class="art-item-footer">
 				<% if(post.prev){ %>
 					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>prev：<a href="<%=url_for(post.prev.path)%>" rel="prev"  title="<%=post.prev.title%>">
-						<%= post.prev.title %> 
+						<%= post.prev.title %>
 					</a></span>
 				<% } %>
 				<% if(post.next){ %>

@@ -1,8 +1,8 @@
 # Search
-search: 
+search:
   enable: true
   service: hexo # google/hexo/algolia/azure/baidu
-  # google 
+  # google
   google_api_key:
   google_engine_id:
   # algolia
@@ -18,29 +18,25 @@ search:
 
 # friends link
 links:
-  - name: ClassicOldSong
-    url: https://ccoooss.com
-  - name: Frantic1048
-    url: https://frantic1048.logdown.com/
-  - name: Hclmaster
-    url: https://hclmaster.github.io/
-  - name: WANG Hsü-Tung
-    url: https://whst.github.io/
+  - name: Neko
+    url: https://neko.ayaka.moe
+  - name: 云羽的羽毛
+    url: https://oao.moe
 
 # navigation menu
 menu:
-  - name: Home
-    slug: home
+  - name: 日记本
+    slug: meow
     url: /
-  - name: Archives
-    slug: archives
-    url: /archives
-  - name: Gallery
-    slug: gallery
-    url: https://photos.google.com/album/AF1QipNoqKYgspQo5O1YhlFXGCQ7p575KBH3Yxf8WHL4?hl=zh-CN
-  - name: About
+  - name: 故事们
+    slug: stories
+    url: /stories
+  - name: 呐？
     slug: about
-    url: /about
+    url: /nyan
+
+# Since year
+since: 2016
 
 # widgets
 widgets:
@@ -56,8 +52,8 @@ less:
 # use url, not username
 social:
 - slug: github
-  url: https://github.com/stkevintan
+  url: https://github.com/nekomeowww
 - slug: twitter
-  url: https://twitter.com/kevinsfork
+  url: https://twitter.com/ayakaneko
 - slug: rss
-	url: /atom.xml
+  url: /atom.xml
