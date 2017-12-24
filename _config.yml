@@ -31,6 +31,9 @@ menu:
   - name: 故事们
     slug: stories
     url: /stories
+  - name: 给猫猫写小纸条
+    slug: postbox
+    url: /postbox
   - name: 呐？
     slug: about
     url: /nyan
