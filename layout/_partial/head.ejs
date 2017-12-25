@@ -6,14 +6,14 @@
   <%
     var title = page.title;
     if (is_archive()) {
-      title = 'Archives';
+      title = '故事们';
       if (is_month())
         title += ': ' + page.year + '/' + page.month;
       else if (is_year())
         title += ': ' + page.year;
     }
     else if (is_category())
-      title = 'Category: ' + page.category;
+      title = '各种东西的分类: ' + page.category;
     else if (is_tag())
       title = 'Tag: ' + page.tag;
   %>

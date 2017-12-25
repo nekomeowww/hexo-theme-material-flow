@@ -18,7 +18,7 @@ search:
 
 # friends link
 links:
-  - name: Neko
+  - name: 猫猫的主世界
     url: https://neko.ayaka.moe
   - name: 云羽的羽毛
     url: https://oao.moe
@@ -35,7 +35,7 @@ menu:
     slug: postbox
     url: /postbox
   - name: 呐？
-    slug: about
+    slug: nyan
     url: /nyan
 
 # Since year
