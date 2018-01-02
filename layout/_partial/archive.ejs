@@ -1,14 +1,14 @@
 <% if (is_tag()) { %>
   <script>
-    window.subData= { title:'Tag : <%= page.tag %>'}
+    window.subData= { title:'猫猫的标签 : <%= page.tag %>'}
   </script>
 <% } else if (is_archive()) { %>
   <script>
-    window.subData= { title:'Year : <%= page.year %><%= page.month ? '.' + page.month : '' %>'}
+    window.subData= { title:'年份 : <%= page.year %><%= page.month ? '.' + page.month : '' %>'}
   </script>
 <% } else if (is_category()) { %>
   <script>
-    window.subData= { title:'Category : <%= page.category %>'}
+    window.subData= { title:'各种东西的分类 : <%= page.category %>'}
   </script>
 <% } %>
 <section class="post-list">
@@ -24,15 +24,15 @@
     <% if (page.prev != 0) { %>
     <a class="prev" rel="prev" href="<%= url_for(page.prev_link) %>">
       <span class="icon icon-chevron-left"></span>
-      <span class="text">Previous</span>
+      <span class="text">后一页</span>
     </a>
     <% } %>
     <% if (page.next != 0) { %>
     <a class="next" rel="next" href="<%= url_for(page.next_link) %>">
-      <span class="text">Next</span>
+      <span class="text">前一页</span>
       <span class="icon icon-chevron-right"></span>
     </a>
     <% } %>
   </nav>
-  
+
 <% } %>
