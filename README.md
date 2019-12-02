@@ -1,9 +1,9 @@
 # Material Flow (Modified by Ayaka Neko)
 
-__由于本人将博客系统转到hugo上，本Hexo主题将只进行bug修复__   
-安利一发我为hugo写的相同风格的主题： [YAMT](https://github.com/stkevintan/sfork)
+__由于本人将博客系统转到 hugo 上，本 Hexo 主题将只进行 bug 修复__   
+安利一发我为 hugo 写的相同风格的主题： [YAMT](https://github.com/stkevintan/sfork)
 
-Yet Another Material-Design-Style Hexo Theme. Demo: [https://diary.ayaka.moe](https://diary.ayaka.moe)  
+Yet Another Material-Design-Style Hexo Theme. Demo: [https://neko.ayaka.moe/](https://neko.ayaka.moe/diary)  
 
 ![](https://i.imgur.com/l86IfdO.png)
 
